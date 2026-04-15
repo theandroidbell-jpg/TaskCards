@@ -45,7 +45,7 @@ Stores OAuth tokens for each integration account. Access and refresh tokens live
 Defines the filters or queries used when syncing tasks from a provider (e.g. specific repos, JQL filters, label selectors). Criteria can be toggled on/off via `is_active`.
 
 ### `tasks_cache`
-A denormalised copy of tasks pulled from external providers. Each row is uniquely identified by `(integration_account_id, provider_task_id)` so upserts during sync are straightforward. Extra fields like `labels` (JSONB array) and `metadata` (JSONB object) capture provider-specific data without requiring schema changes.
+A denormalized copy of tasks pulled from external providers. Each row is uniquely identified by `(integration_account_id, provider_task_id)` so upserts during sync are straightforward. Extra fields like `labels` (JSONB array) and `metadata` (JSONB object) capture provider-specific data without requiring schema changes.
 
 ### `packs`
 User-created groupings of tasks — think of them as card decks. Each pack has a type (`sprint`, `project`, `custom`, `backlog`) and optional metadata.

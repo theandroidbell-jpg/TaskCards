@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS integration_criteria (
 );
 
 -- ============================================================
--- tasks_cache – denormalised copy of tasks pulled from providers
+-- tasks_cache – denormalized copy of tasks pulled from providers
 -- ============================================================
 CREATE TABLE IF NOT EXISTS tasks_cache (
   id                      uuid PRIMARY KEY DEFAULT gen_random_uuid(),
